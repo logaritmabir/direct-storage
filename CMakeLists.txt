@@ -12,7 +12,6 @@ enable_language(CUDA)
 find_package(CUDA REQUIRED)
 include_directories(${CUDA_INCLUDE_DIRS})
 
-# CUDA source files
 set(CUDA_FILES
     faster_faster.cu
     faster_faster.cuh
