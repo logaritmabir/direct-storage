@@ -22,6 +22,6 @@ set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};-O3)
 set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};-arch=sm_75)
 set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS};--expt-relaxed-constexpr)
 
-add_executable(${PROJECT_NAME} ${CUDA_FILES} main.cu)  # Add main.cpp or your main source file here
+add_executable(${PROJECT_NAME} ${CUDA_FILES} main.cu)
 
 target_link_libraries(${PROJECT_NAME} ${CUDA_LIBRARIES} cufile)
